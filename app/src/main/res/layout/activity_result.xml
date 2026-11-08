@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_result_rf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/txt_resultat_rf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Résultat du voyage"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/btn_nouveau_rf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nouveau voyageur"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

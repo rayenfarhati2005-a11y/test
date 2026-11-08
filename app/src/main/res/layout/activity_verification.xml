@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- الصورة على اليسار -->
+    <ImageView
+        android:id="@+id/img_passport_rf"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.3"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:contentDescription="@string/passeport_temporel"
+        android:scaleType="centerInside"/>
+
+    <!-- المعلومات على اليمين -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_titre_verif_rf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSEPORT TEMPOREL"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_nom_verif_rf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_titre_verif_rf"
+            android:layout_marginTop="20dp"
+            android:text="Nom : "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txt_age_verif_rf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_nom_verif_rf"
+            android:layout_marginTop="12dp"
+            android:text="Age temporel : "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txt_motif_verif_rf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_age_verif_rf"
+            android:layout_marginTop="12dp"
+            android:text="Motif : "
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_approuver_rf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_motif_verif_rf"
+            android:layout_marginTop="20dp"
+            android:text="Approuver le saut temporel"/>
+
+        <Button
+            android:id="@+id/btn_refuser_rf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_approuver_rf"
+            android:text="Refuser le saut"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
